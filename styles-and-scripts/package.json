@@ -1,0 +1,36 @@
+{
+  "name": "@public-function-org/wp-storybook-styles-and-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build src/my-theme.ts --output-path=wordpress/docroot/wp-content/themes/my-theme/build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardBock/wp-storybook.git"
+  },
+  "author": "Edward Bock <hi@edwardbock.de> (https://www.edwardbock.de/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardBock/wp-storybook/issues"
+  },
+  "homepage": "https://github.com/EdwardBock/wp-storybook#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.21",
+    "@wordpress/scripts": "^24.2.0",
+    "babel-loader": "^8.2.5",
+    "react": "^18.2.0"
+  }
+}

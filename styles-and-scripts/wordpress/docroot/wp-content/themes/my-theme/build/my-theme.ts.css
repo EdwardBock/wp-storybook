@@ -1,0 +1,57 @@
+.my-button {
+  border: none;
+  font-size: 1.2rem;
+  padding: var(--button-padding, 16px);
+  color: var(--button-text-color, white);
+  background: var(--button-background-color, gray);
+}
+
+.my-button[data-variant=primary] {
+  --button-text-color: white;
+  --button-background-color: blue;
+}
+
+.my-button[data-variant=secondary] {
+  --button-text-color: black;
+  --button-background-color: yellow;
+}
+
+.my-button[data-variant=error] {
+  --button-text-color: white;
+  --button-background-color: red;
+}
+
+.my-button[data-size=small] {
+  --button-padding: 10px;
+}
+.my-button[data-size=medium] {
+  --button-padding: 16px;
+}
+.my-button[data-size=large] {
+  --button-padding: 24px;
+}
+
+.my-button:disabled {
+  --button-background-color: gray;
+}
+
+.my-login-form {
+    border: 1px solid darkgrey;
+    padding: 10px;
+}
+
+.my-login-form input {
+    display: block;
+}
+
+.my-login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.my-login-form [data-form-error] {
+    color: darkred;
+}
+
+

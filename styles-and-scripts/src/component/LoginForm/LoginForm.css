@@ -1,0 +1,18 @@
+.my-login-form {
+    border: 1px solid darkgrey;
+    padding: 10px;
+}
+
+.my-login-form input {
+    display: block;
+}
+
+.my-login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.my-login-form [data-form-error] {
+    color: darkred;
+}
