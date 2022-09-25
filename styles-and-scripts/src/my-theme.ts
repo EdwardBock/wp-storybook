@@ -1,8 +1,8 @@
+import domReady from '@wordpress/dom-ready';
 import './styles/theme.css';
 import loginForm, {OnSubmit} from './component/LoginForm/login-form';
 
-document.addEventListener("DOMContentLoaded", function () {
-
+domReady( function () {
     const onSubmit: OnSubmit = async (email, password) => {
         // authentication request
         return true;
@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", function () {
     forms.forEach(form => {
         loginForm(form, onSubmit);
     });
-})
+} );
